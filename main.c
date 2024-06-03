@@ -32,7 +32,7 @@ int main() {
 	bool is_file = false;
 	// variable to read network prediction
 	Matrix* ans = NULL;
-	// accurancy variable
+	// accuracy variable
 	double acc = 0.0;
 	// variables for neural network
 	int neuron_counts[100] = { 0 };
@@ -258,14 +258,14 @@ int main() {
 				printMatrix(input_set[i], true);
 				printf("prediction: ");
 				printMatrix(ans, true);
-				// calculating accurency
-				double t = accurency(output_set[i], ans);
+				// calculating accuracy
+				double t = accuracy(output_set[i], ans);
 				acc += (1 - t);
 				printf("output: ");
 				printMatrix(output_set[i], true);
 			}
 			acc = (acc / (double)sets) * 100.0;
-			printf("------------------\naccurency: %0.20lf\n", acc);
+			printf("------------------\naccuracy: %0.20lf\n", acc);
 			continue;
 		}
 		// ===> 9 <===
