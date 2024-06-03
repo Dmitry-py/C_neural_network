@@ -100,8 +100,8 @@ void do_func_on_matrix(Matrix* m, my_func* func, Matrix** ans) {
 	}
 }
 
-// accurency calculating as root mean square
-double accurency(Matrix* out, Matrix* m) {
+// accuracy calculating as root mean square
+double accuracy(Matrix* out, Matrix* m) {
 	double res = 0.0;
 	for (int i = 0; i < m->m; i++) {
 		res += pow(out->arr[i] - m->arr[i], 2.0);
