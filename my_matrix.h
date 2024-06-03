@@ -22,8 +22,8 @@ void printMatrix(Matrix* m, bool trans);
 Matrix* create_matrix(int m, int n, double val, double* data, bool with_randoms, double a, double b);
 // the function to use "func" on elems in the matrix m
 void do_func_on_matrix(Matrix* m, my_func* func, Matrix** ans);
-// the function to calculating accurency
-double accurency(Matrix* out, Matrix* m);
+// the function to calculating accuracy
+double accuracy(Matrix* out, Matrix* m);
 // the function to matrix multiplication
 // more description in the *.c file
 void dot(Matrix* a, bool transA, Matrix* b, bool transB, my_func* func_b, Matrix* alpha, Matrix* teta, my_func* func_teta, Matrix** ans);
